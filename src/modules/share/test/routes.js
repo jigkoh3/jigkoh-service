@@ -144,7 +144,7 @@ describe('Share CRUD routes tests', function () {
 
     });
 
-    xit('should be share get not use token 1', (done)=>{
+    xit('should be share get not use token 2', (done)=>{
         request(app)
         .get('/api/shares')
         .expect(403)
