@@ -32,7 +32,7 @@ describe('Share CRUD routes tests', function () {
         done();
     });
 
-    it('should be Share get use token', (done)=>{
+    xit('should be Share get use token', (done)=>{
         request(app)
         .get('/api/shares')
         .set('Authorization', 'Bearer ' + token)
@@ -144,7 +144,7 @@ describe('Share CRUD routes tests', function () {
 
     });
 
-    it('should be share get not use token', (done)=>{
+    xit('should be share get not use token', (done)=>{
         request(app)
         .get('/api/shares')
         .expect(403)
@@ -155,7 +155,7 @@ describe('Share CRUD routes tests', function () {
         .end(done);
     });
 
-    it('should be share post not use token', function (done) {
+    xit('should be share post not use token', function (done) {
 
         request(app)
             .post('/api/shares')
